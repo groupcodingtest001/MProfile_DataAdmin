@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - My Flask Application</title>
+    <link rel="stylesheet/less" type="text/css" href="/static/content/variables.less" />
+    <link rel="stylesheet/less" type="text/css" href="/static/content/bootstrap-select.less" />
+    <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
+    <link href="/static/content/ui.jqgrid.css" rel="stylesheet" />
+    <link href="/static/content/ui.jqgrid-bootstrap.css" rel="stylesheet" />
+    <link href="/static/content/ui.jqgrid-bootstrap-ui.css" rel="stylesheet" />
+    <link href="/static/content/bootstrap-datetimepicker.css" rel="stylesheet" />
+
+    <script src="/static/scripts/modernizr-2.6.2.js"></script>
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top" style="background-color:midnightblue;height:52px;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-brand"><img src="/static/img/mprofile white.png" width="120" /></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        {% block content %}{% endblock %}
+        <hr />
+        <footer style="text-align:center;color:grey;">
+            <p>Copyright &copy; 1998 - 2018 GroupM All Rights Reserved.</p>
+            <p>群邑 (上海) 广告有限公司 版权所有</p>
+        </footer>
+    </div>
+
+    <script src="/static/scripts/jquery-1.10.2.js"></script>
+    <script src="/static/scripts/bootstrap.js"></script>
+    <script src="/static/scripts/respond.js"></script>
+    <script src="/static/scripts/grid.locale-en.js"></script>
+    <script src="/static/scripts/jquery.jqGrid.min.js"></script>
+    <script src="/static/scripts/bootstrap-select.js"></script>
+    <script src="/static/scripts/bootstrap-datetimepicker.js"></script>
+
+
+
+
+
+
+    {% block scripts %}{% endblock %}
+
+</body>
+</html>
